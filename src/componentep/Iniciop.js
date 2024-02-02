@@ -6,7 +6,7 @@ import axios from "axios";
 export function Iniciop(){
     const [dataProductos, setDataProductos]=useState([]);
     useEffect(()=>{
-        axios.get("http://localhost:3000/api/mostrarProductos")
+        axios.get("https://asas-x4sc.onrender.com/api/mostrarProductos")
         .then((response)=>{
             console.log(response);
             setDataProductos(response.data);
@@ -35,10 +35,10 @@ export function Iniciop(){
         <table className="table table-hover">
             <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Nombre</th>
-                    <td>Cantidad</td>
-                    <td>Precio</td>
+                    <th>id</th>
+                    <th>nombre</th>
+                    <td>cantidad</td>
+                    <td>precio</td>
                 </tr>
             </thead>
             <tbody>

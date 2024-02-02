@@ -6,7 +6,7 @@ import axios from "axios";
 export function Inicio(){
     const [dataUsuarios, setDataUsuarios]=useState([]);
     useEffect(()=>{
-        axios.get("http://localhost:3000/api/mostrarUsuarios")
+        axios.get("https://asas-x4sc.onrender.com/api/mostrarUsuarios")
         .then((response)=>{
             console.log(response);
             setDataUsuarios(response.data);
@@ -18,7 +18,7 @@ export function Inicio(){
     const listaUsuarios=dataUsuarios.map((usuario, id)=>{
         var editar="/EditarUsuario"+usuario.id;
         var borrar="/BorrarUsuario"+usuario.id;
-        var foto="http://localhost:3000/images/"+usuario.foto;
+        var foto="https://asas-x4sc.onrender.com/images/"+usuario.foto;
         return(
             <tr key={id} className="align-middle" > 
                 <td>{usuario.id}</td>
