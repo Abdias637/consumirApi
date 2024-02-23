@@ -29,7 +29,7 @@ export function Nuevo (){
         setTimeout(()=>{
             setMensaje("");
         }, 3000);
-    }
+     }
     return(
     <div className="container mt-5">
         <div className="text-danger"><h3>{mensaje}</h3></div>

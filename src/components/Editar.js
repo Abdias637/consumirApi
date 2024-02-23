@@ -59,7 +59,7 @@ export function EditarUsuario(){
             usuario,
         }
         console.log(datos);
-    }
+ }
     return(
         <div className="container mt-5">
         <div className="text-danger"><h3>{mensaje}</h3></div>

@@ -20,11 +20,7 @@ export function Menu(){
                 <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/nuevoproducto">Nuevo producto</a>
                 </li>
-                <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="/borrarUsuario">Borrar Usuario</a>
-=======
-                <a className="nav-link active" aria-current="page" href="/NuevoProducto">Nuevo producto</a>
-                </li>
+            
             </ul>
             <form className="d-flex" role="search">
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
